@@ -114,20 +114,20 @@ $(document).ready(function () {
 
   // endregion
 
+  var e,
+    t = window.location.hash;
+  "" != t &&
+    (e = $("a[name='" + t + "']")).length &&
+    $("html,body").animate({ scrollTop: e.offset().top }, "slow"),
+    $(window).bind("scroll", function () {
+      32 < $(window).scrollTop()
+        ? $(".header").addClass("sticky")
+        : $(".header").removeClass("sticky");
+    });
+
   window.onscroll = function () {
     myFunction();
   };
-
-  var navbar = document.getElementById("navbar");
-  var sticky = navbar.offsetTop;
-
-  function myFunction() {
-    if (window.pageYOffset >= sticky) {
-      navbar.classList.add("sticky");
-    } else {
-      navbar.classList.remove("sticky");
-    }
-  }
 });
 
 // ------------------------------------------ funkce pro otevirani novych oken
