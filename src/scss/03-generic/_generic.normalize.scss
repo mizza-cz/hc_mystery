@@ -20,16 +20,19 @@ dd {
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
-ul[role='list'],
-ol[role='list'] {
+ul[role="list"],
+ol[role="list"] {
   list-style: none;
 }
 
 // Prevent adjustments of font size after orientation changes in iOS.
 html {
-	-webkit-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
 }
-
+html {
+  -webkit-text-size-adjust: 100%;
+  overflow-x: hidden;
+}
 /* Set core root defaults */
 html:focus-within {
   scroll-behavior: smooth;
@@ -60,4 +63,24 @@ button,
 textarea,
 select {
   font: inherit;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  height: 100%;
+}
+.baseWrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.baseContent {
+  flex: 1 0 auto;
+}
+footer {
+  flex: 0 0 auto;
 }
