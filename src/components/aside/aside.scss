@@ -1,0 +1,154 @@
+aside .aside-inner .box {
+  background-color: #ffffff;
+  box-shadow: 0 3px 0 0 rgba(0, 0, 0, 0.05);
+  border: solid 1px #eeeeee;
+  padding: 15px 20px;
+  margin-bottom: 24px;
+  padding-top: 25px;
+  position: relative;
+}
+
+aside .box-news .news-list .new-heading {
+  font-family: Rajdhani;
+  font-size: 19px;
+  font-weight: bold;
+  line-height: 1.11;
+  color: #313131;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+aside .box-news .news-list .new-text {
+  font-family: Roboto;
+  font-size: 15px;
+  line-height: 1.4;
+  color: #313131;
+  margin-bottom: 10px;
+}
+aside .box-news .news-list .new-text a {
+  font-weight: 500;
+  text-decoration: underline;
+}
+aside .box-news .news-list .new-text a:active,
+aside .box-news .news-list .new-text a:focus,
+aside .box-news .news-list .new-text a:hover {
+  text-decoration: none;
+}
+
+aside .box-news .news-list .new-date {
+  font-family: Rajdhani;
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 2.46;
+  color: #a0a0a0;
+}
+
+aside .box-standings .tym {
+  display: none;
+}
+
+aside .box-standings .TRE td {
+  color: #e43d32;
+}
+aside .box-standings .TRE td a {
+  color: #e43d32;
+}
+
+aside .box-standings .show-more {
+  font-family: Rajdhani;
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 1.4;
+  color: var(--dark-blue);
+  text-align: center;
+  text-transform: uppercase;
+  display: block;
+}
+aside .box-standings .show-more:before {
+  display: block;
+  content: "";
+  height: 120px;
+  background-image: linear-gradient(to top, #ffffff, rgba(121, 121, 121, 0));
+  position: absolute;
+  width: 0%;
+  bottom: 50px;
+  left: 0;
+}
+
+aside .box-articles .articles-inner .article {
+  border-bottom: solid 1px #eeeeee;
+  display: block;
+  margin-bottom: 14px;
+  padding-bottom: 14px;
+}
+aside .box-articles .articles-inner .article:active,
+aside .box-articles .articles-inner .article:focus,
+aside .box-articles .articles-inner .article:hover {
+  text-decoration: none;
+}
+aside .box-articles .articles-inner .article:active .article-heading,
+aside .box-articles .articles-inner .article:focus .article-heading,
+aside .box-articles .articles-inner .article:hover .article-heading {
+  text-decoration: underline;
+}
+aside .box-articles .articles-inner .article:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+aside .box-articles .articles-inner .article-cat {
+  font-family: Rajdhani;
+  font-size: 15px;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #e2002e;
+  display: inline-block;
+  padding: 6px 17px;
+  text-transform: uppercase;
+  position: relative;
+  top: -18px;
+  left: 10px;
+}
+aside .box-articles .articles-inner .article-heading {
+  font-family: Rajdhani;
+  font-size: 19px;
+  font-weight: bold;
+  line-height: 1.2;
+  color: #313131;
+}
+aside .box-articles .articles-inner .article-date {
+  font-family: Rajdhani;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 2;
+  color: #a0a0a0;
+  text-transform: uppercase;
+}
+
+aside .box-submenu .select-nav {
+  margin-bottom: 20px;
+}
+
+aside .box-submenu .dropdown-item {
+  font-family: Rajdhani;
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 1.6;
+  color: #313131;
+  border-bottom: 1px solid #eeeeee;
+  padding: 7px 0;
+  text-transform: uppercase;
+}
+aside .box-submenu .dropdown-item.active,
+aside .box-submenu .dropdown-item:active,
+aside .box-submenu .dropdown-item:focus,
+aside .box-submenu .dropdown-item:hover {
+  border-bottom: 1px solid #e2002e;
+  background: transparent;
+  color: #313131;
+}
+aside .box-submenu .dropdown-item .number {
+  color: #e2002e;
+  display: inline-block;
+  margin-right: 10px;
+}

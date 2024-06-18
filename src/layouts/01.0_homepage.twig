@@ -1,2 +1,116 @@
 {% extends "@components/base/base.twig" %} {% set title = "01.0_homepage" %} {%
-block main %} {% endblock %}
+block main %}
+
+<div class="container">
+  <a href="#" class="hpTopBan">
+    <img src="images/content/nabor.jpg" alt="nabor" />
+  </a>
+</div>
+<div class="container-fluid topstories">
+  <a href="#" class="topstory">
+    <div class="topstory-body">
+      <h1>Pátý ročník O Kapku lepšího hokeje byl nejúspěšnější!</h1>
+      <div class="cat">Aktuální zprávy</div>
+    </div>
+    <img
+      src="https://php.esports.cz/images/min_https.php?cover&amp;topcut&amp;exact&amp;w=1440&amp;h=800&amp;mtime=1715723043&amp;file=http://www.hstrebic.cz//files/articles_photo/8250_bittner.jpg"
+      class="photo-desktop"
+    />
+    <img
+      src="https://php.esports.cz/images/min_https.php?cover&amp;topcut&amp;exact&amp;w=800&amp;h=500&amp;mtime=1715723043&amp;file=http://www.hstrebic.cz//files/articles_photo/8250_bittner.jpg"
+      class="photo-mobile"
+    />
+  </a>
+
+  <a href="#" class="topstory">
+    <div class="topstory-body">
+      <h1>Přípravná utkání - startujeme ve Velkém Meziříčí, generálka 5.9.</h1>
+      <div class="cat">Aktuální zprávy</div>
+    </div>
+    <img
+      src="https://php.esports.cz/images/min_https.php?cover&amp;topcut&amp;exact&amp;w=1440&amp;h=800&amp;mtime=1715180261&amp;file=http://www.hstrebic.cz//files/articles_photo/8249_img-6076-1.jpg"
+      class="photo-desktop"
+    />
+    <img
+      src="https://php.esports.cz/images/min_https.php?cover&amp;topcut&amp;exact&amp;w=800&amp;h=500&amp;mtime=1715180261&amp;file=http://www.hstrebic.cz//files/articles_photo/8249_img-6076-1.jpg"
+      class="photo-mobile"
+    />
+  </a>
+
+  <a href="#" class="topstory">
+    <div class="topstory-body">
+      <h1>
+        Přesvědčil mě zájem Třebíče, říká Brož. Mluví o rivalitě v derby nebo
+        azylu
+      </h1>
+      <div class="cat">Rozhovory</div>
+    </div>
+    <img
+      src="https://php.esports.cz/images/min_https.php?cover&amp;topcut&amp;exact&amp;w=1440&amp;h=800&amp;mtime=1714831066&amp;file=http://www.hstrebic.cz//files/articles_photo/8248_brozik1111.jpg"
+      class="photo-desktop"
+    />
+    <img
+      src="https://php.esports.cz/images/min_https.php?cover&amp;topcut&amp;exact&amp;w=800&amp;h=500&amp;mtime=1714831066&amp;file=http://www.hstrebic.cz//files/articles_photo/8248_brozik1111.jpg"
+      class="photo-mobile"
+    />
+  </a>
+</div>
+
+<div class="container">
+  <div class="topstories-nav">
+    <div class="topstory-nav">
+      <span>Pátý ročník O Kapku lepšího hokeje byl nejúspěšnější!</span>
+    </div>
+
+    <div class="topstory-nav">
+      <span
+        >Přípravná utkání - startujeme ve Velkém Meziříčí, generálka 5.9.
+      </span>
+    </div>
+
+    <div class="topstory-nav">
+      <span
+        >Přesvědčil mě zájem Třebíče, říká Brož. Mluví o rivalitě v derby nebo
+        azylu
+      </span>
+    </div>
+  </div>
+</div>
+
+<div class="container layout">
+  <div class="row">
+    <main class="col-sm-8">
+      <div class="main-inner">
+        <div class="box box-news mb-5">
+          <h2 class="heading">
+            Aktuálně
+            <a href="#" class="more">Další aktuality</a>
+          </h2>
+          <div class="news-list">
+            <div class="new">
+              <div class="new-heading">Podpis smlouvy</div>
+              <div class="new-text">
+                Dnes, tj. 4. dubna bylo podpisem smlouvy definitivně stvrzeno
+                fungování HST na Zimním stadionu v Moravských Budějovicích pro
+                nadcházející sezony. Podpisu smlouvy se účastnil starosta
+                Moravských Budějovic pan Martin Ferdan, ředitelka
+                moravskobudějovického ZS paní Miroslava Bendová a předseda HST
+                pan Martin Svoboda.
+                <!---->
+              </div>
+              <div class="new-date">4.4.2024</div>
+            </div>
+          </div>
+        </div>
+        <h2 class="heading">Novinky</h2>
+        {% include "@components/articles-list/articles-list.twig" %}
+        <div class="row more-button">
+          <a href="#" class="btn btn-primary">Archiv článků</a>
+        </div>
+      </div>
+    </main>
+    {% include "@components/aside/aside.twig" %}
+  </div>
+</div>
+
+{% endblock %}
