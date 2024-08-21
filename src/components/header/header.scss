@@ -6664,6 +6664,8 @@ table.nice.table.schedule td.logos {
   white-space: nowrap;
   padding: 11px 32px 7px 16px;
   width: 180px;
+  display: flex;
+  align-items: center;
 }
 @media (max-width: 1000px) {
   table.nice.table.schedule td.logos {
@@ -7225,7 +7227,6 @@ header {
 }
 
 .hpTopBan {
-  margin: 40px auto;
   display: block;
   width: 100%;
 

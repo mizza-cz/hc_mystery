@@ -1,0 +1,498 @@
+{% extends "@components/base/base.twig" %} {% set title = "03.0_matches" %} {%
+block main %}
+
+<div class="dark-page"></div>
+
+<div class="container layout">
+  <div class="row">
+    <main class="col-sm-8">
+      <div class="main-inner">
+        <br />
+        <div class="row">
+          <div class="col-sm-12 main-text">
+            <!-- hlavni text -->
+
+            <h1><span>Zápasy -</span> Přípravné zápasy 2024/25</h1>
+            <br />
+            <div class="menicko right">
+              <strong>Zobrazení:</strong>
+              |
+              <a href="zapasy.asp?stats=&amp;sezona=2025PRIP&amp;kde=doma"
+                >pouze doma</a
+              >
+              |
+              <a href="zapasy.asp?stats=&amp;sezona=2025PRIP&amp;kde=venku"
+                >pouze venku</a
+              >
+              |
+              <a href="zapasy.asp?stats=&amp;sezona=2025PRIP&amp;kde=vsechno"
+                >vše</a
+              >
+            </div>
+            <div class="menicko right">
+              <strong>Zápasy do kalendáře:</strong>
+              |
+              <a
+                href="webcal://hstrebic.cz/zapas_ics.asp?sezona=2025PRIP"
+                class="link_more ml-2 mr-2"
+                >Outlook / Apple kalendář</a
+              >
+            </div>
+            <br />
+
+            <table
+              id="zapasVypis"
+              cellspacing="0"
+              cellpadding="0"
+              class="table nice schedule"
+            >
+              <tr data-href="zapas.asp?id=9557" class="pointer venku">
+                <td class="logos">
+                  <img
+                    class="logo"
+                    src="images/content/logo.png"
+                    title="Velké Meziříčí"
+                  /><img
+                    class="logo"
+                    src="images/content/dynamo.png"
+                    title="Třebíč"
+                  />
+                </td>
+                <td class="teams">
+                  <div class="info">úterý 13.8.</div>
+                  <div class="names">
+                    <strong>Velké Meziříčí</strong><span> vs </span>Třebíč
+                  </div>
+                </td>
+                <td class="score">
+                  <a href="zapas.asp?id=9557" class="win"
+                    ><strong>3:6</strong></a
+                  ><span style="font-size: 12px">(1:1, 0:4, 2:1)</span>
+                </td>
+                <td class="buttons">
+                  <a href="zapas.asp?id=9557" class="button">Report</a>
+                </td>
+              </tr>
+              <tr data-href="zapas.asp?id=9558" class="pointer venku">
+                <td class="logos">
+                  <img class="logo" src="znaky/tab.png" title="Tábor" /><img
+                    class="logo"
+                    src="znaky/tre.png"
+                    title="Třebíč"
+                  />
+                </td>
+                <td class="teams">
+                  <div class="info">přát., čtvrtek 15.8.</div>
+                  <div class="names">
+                    <strong>Tábor</strong><span> vs </span>Třebíč
+                  </div>
+                </td>
+                <td class="score">
+                  <a href="zapas.asp?id=9558" class="loss"
+                    ><strong>6:5</strong></a
+                  ><span style="font-size: 12px">(1:3, 2:0, 3:2)</span>
+                </td>
+                <td class="buttons">
+                  <a href="zapas.asp?id=9558" class="button">Report</a>
+                </td>
+              </tr>
+              <tr class="doma">
+                <td class="logos">
+                  <img
+                    class="logo"
+                    src="images/content/logo.png"
+                    title="Velké Meziříčí"
+                  /><img
+                    class="logo"
+                    src="images/content/dynamo.png"
+                    title="Třebíč"
+                  />
+                </td>
+                <td class="teams">
+                  <div class="info">úterý 20.8.</div>
+                  <div class="names">
+                    Třebíč<span> vs </span><strong>Pardubice B</strong>
+                  </div>
+                </td>
+                <td class="score">
+                  <strong>18:00</strong><span style="font-size: 12px"></span>
+                </td>
+                <td class="buttons"></td>
+              </tr>
+              <tr class="doma">
+                <td class="logos">
+                  <img class="logo" src="znaky/tre.png" title="Třebíč" /><img
+                    class="logo"
+                    src="znaky/pro.png"
+                    title="Prostějov"
+                  />
+                </td>
+                <td class="teams">
+                  <div class="info">čtvrtek 22.8.</div>
+                  <div class="names">
+                    Třebíč<span> vs </span><strong>Prostějov</strong>
+                  </div>
+                </td>
+                <td class="score">
+                  <strong>18:00</strong><span style="font-size: 12px"></span>
+                </td>
+                <td class="buttons"></td>
+              </tr>
+              <tr class="venku">
+                <td class="logos">
+                  <img class="logo" src="znaky/chm.png" title="Chomutov" /><img
+                    class="logo"
+                    src="znaky/tre.png"
+                    title="Třebíč"
+                  />
+                </td>
+                <td class="teams">
+                  <div class="info">úterý 27.8.</div>
+                  <div class="names">
+                    <strong>Chomutov</strong><span> vs </span>Třebíč
+                  </div>
+                </td>
+                <td class="score">
+                  <strong>17:00</strong><span style="font-size: 12px"></span>
+                </td>
+                <td class="buttons"></td>
+              </tr>
+              <tr class="venku">
+                <td class="logos">
+                  <img
+                    class="logo"
+                    src="znaky/pab.png"
+                    title="Pardubice B"
+                  /><img class="logo" src="znaky/tre.png" title="Třebíč" />
+                </td>
+                <td class="teams">
+                  <div class="info">středa 28.8.</div>
+                  <div class="names">
+                    <strong>Pardubice B</strong><span> vs </span>Třebíč
+                  </div>
+                </td>
+                <td class="score">
+                  <strong>18:00</strong><span style="font-size: 12px"></span>
+                </td>
+                <td class="buttons"></td>
+              </tr>
+              <tr class="venku">
+                <td class="logos">
+                  <img class="logo" src="znaky/pro.png" title="Prostějov" /><img
+                    class="logo"
+                    src="znaky/tre.png"
+                    title="Třebíč"
+                  />
+                </td>
+                <td class="teams">
+                  <div class="info">úterý 3.9.</div>
+                  <div class="names">
+                    <strong>Prostějov</strong><span> vs </span>Třebíč
+                  </div>
+                </td>
+                <td class="score">
+                  <strong>18:00</strong><span style="font-size: 12px"></span>
+                </td>
+                <td class="buttons"></td>
+              </tr>
+              <tr class="doma">
+                <td class="logos">
+                  <img class="logo" src="znaky/tre.png" title="Třebíč" /><img
+                    class="logo"
+                    src="znaky/ska.png"
+                    title="Skalica"
+                  />
+                </td>
+                <td class="teams">
+                  <div class="info">čtvrtek 5.9.</div>
+                  <div class="names">
+                    Třebíč<span> vs </span><strong>Skalica</strong>
+                  </div>
+                </td>
+                <td class="score">
+                  <strong>18:00</strong><span style="font-size: 12px"></span>
+                </td>
+                <td class="buttons"></td>
+              </tr>
+            </table>
+
+            <!-- hlavni text konec -->
+          </div>
+        </div>
+      </div>
+    </main>
+    <aside class="col-sm-4">
+      <div class="aside-inner">
+        <br />
+
+        <div class="box box-submenu">
+          <h2 class="heading">Sezóny</h2>
+          <div class="submenu-inner">
+            <a href="zapasy.asp?sezona=2024" class="dropdown-item"
+              >Chance liga 2023/24</a
+            >
+            <a href="zapasy.asp?sezona=2024prip" class="dropdown-item"
+              >Příprava 2023/24</a
+            >
+            <a href="zapasy.asp?sezona=2023" class="dropdown-item"
+              >Chance liga 2022/23</a
+            >
+            <a href="zapasy.asp?sezona=2023prip" class="dropdown-item"
+              >Příprava 2022/23</a
+            >
+            <a href="zapasy.asp?sezona=2022" class="dropdown-item"
+              >Chance liga 2021/22</a
+            >
+            <a href="zapasy.asp?sezona=2022prip" class="dropdown-item"
+              >Příprava 2021/22</a
+            >
+            <a href="zapasy.asp?sezona=2021" class="dropdown-item"
+              >Chance liga 2020/21</a
+            >
+            <a href="zapasy.asp?sezona=2021prip" class="dropdown-item"
+              >Příprava 2020/21</a
+            >
+            <a href="zapasy.asp?sezona=2020" class="dropdown-item"
+              >Chance liga 2019/20</a
+            >
+            <a href="zapasy.asp?sezona=2020prip" class="dropdown-item"
+              >Příprava 2019/20</a
+            >
+            <a href="zapasy.asp?sezona=2019" class="dropdown-item"
+              >Chance liga 2018/19</a
+            >
+            <a href="zapasy.asp?sezona=2019prip" class="dropdown-item"
+              >Příprava 2018/19</a
+            >
+            <a href="zapasy.asp?sezona=2018" class="dropdown-item"
+              >WSM liga 2017/18</a
+            >
+            <a href="zapasy.asp?sezona=2018prip" class="dropdown-item"
+              >Příprava 2017/18</a
+            >
+            <a href="zapasy.asp?sezona=2017" class="dropdown-item"
+              >WSM liga 2016/17</a
+            >
+            <a href="zapasy.asp?sezona=2017prip" class="dropdown-item"
+              >Příprava 2016/17</a
+            >
+            <a href="zapasy.asp?sezona=2016" class="dropdown-item"
+              >WSM liga 2015/16</a
+            >
+            <a href="zapasy.asp?sezona=2016prip" class="dropdown-item"
+              >Příprava 2015/16</a
+            >
+            <a href="zapasy.asp?sezona=2015" class="dropdown-item"
+              >1.liga 2014/15</a
+            >
+            <a href="zapasy.asp?sezona=2015prip" class="dropdown-item"
+              >Příprava 2014/15</a
+            >
+            <a href="zapasy.asp?sezona=2014" class="dropdown-item"
+              >1.liga 2013/14</a
+            >
+            <a href="zapasy.asp?sezona=2014prip" class="dropdown-item"
+              >Příprava 2013/14</a
+            >
+            <a href="zapasy.asp?sezona=2013" class="dropdown-item"
+              >1.liga 2012/13</a
+            >
+            <a href="zapasy.asp?sezona=2013prip" class="dropdown-item"
+              >Příprava 2012/13</a
+            >
+            <a href="zapasy.asp?sezona=2012" class="dropdown-item"
+              >1.liga 2011/12</a
+            >
+            <a href="zapasy.asp?sezona=2012prip" class="dropdown-item"
+              >Příprava 2011/12</a
+            >
+            <a href="zapasy.asp?sezona=2011" class="dropdown-item"
+              >1.liga 2010/11</a
+            >
+            <a href="zapasy.asp?sezona=2010prip" class="dropdown-item"
+              >Příprava 2010/11</a
+            >
+            <a href="zapasy.asp?sezona=2010" class="dropdown-item"
+              >1.liga 2009/10</a
+            >
+            <a href="zapasy.asp?sezona=2009prip" class="dropdown-item"
+              >Příprava 2009/10</a
+            >
+            <a href="zapasy.asp?sezona=2009" class="dropdown-item"
+              >1.liga 2008/09</a
+            >
+            <a href="zapasy.asp?sezona=2008prip" class="dropdown-item"
+              >Příprava 2008/09</a
+            >
+            <a href="zapasy.asp?sezona=2008" class="dropdown-item"
+              >1.liga 2007/08</a
+            >
+            <a href="zapasy.asp?sezona=2007prip" class="dropdown-item"
+              >Příprava 2007/08</a
+            >
+            <a href="zapasy.asp?sezona=2007" class="dropdown-item"
+              >1.liga 2006/07</a
+            >
+            <a href="zapasy.asp?sezona=2006prip" class="dropdown-item"
+              >Příprava 2006/07</a
+            >
+            <a href="zapasy.asp?sezona=2006" class="dropdown-item"
+              >1.liga 2005/06</a
+            >
+            <a href="zapasy.asp?sezona=2005prip" class="dropdown-item"
+              >Příprava 2005/06</a
+            >
+            <a href="zapasy.asp?sezona=2005" class="dropdown-item"
+              >1.liga 2004/05</a
+            >
+            <a href="zapasy.asp?sezona=2004prip" class="dropdown-item"
+              >Příprava 2004/05</a
+            >
+            <a href="zapasy.asp?sezona=2004" class="dropdown-item"
+              >1.liga 2003/04</a
+            >
+            <a href="zapasy.asp?sezona=2003prip" class="dropdown-item"
+              >Příprava 2003/04</a
+            >
+            <a href="zapasy.asp?sezona=2003" class="dropdown-item"
+              >1.liga 2002/03</a
+            >
+            <a href="zapasy.asp?sezona=2002prip" class="dropdown-item"
+              >Příprava 2002/03</a
+            >
+            <a href="zapasy.asp?sezona=2002" class="dropdown-item"
+              >1.liga 2001/02</a
+            >
+            <a href="zapasy.asp?sezona=2001prip" class="dropdown-item"
+              >Příprava 2001/02</a
+            >
+            <a href="zapasy.asp?sezona=2001" class="dropdown-item"
+              >1.liga 2000/01</a
+            >
+            <a href="zapasy.asp?sezona=2000prip" class="dropdown-item"
+              >Příprava 2000/01</a
+            >
+            <a href="zapasy.asp?sezona=2000" class="dropdown-item"
+              >1.liga 1999/00</a
+            >
+            <a href="zapasy.asp?sezona=1999prip" class="dropdown-item"
+              >Příprava 1999/00</a
+            >
+            <a href="zapasy.asp?sezona=1999" class="dropdown-item"
+              >1.liga 1998/99</a
+            >
+            <a href="zapasy.asp?sezona=1998prip" class="dropdown-item"
+              >Příprava 1998/99</a
+            >
+            <a href="zapasy.asp?sezona=1998" class="dropdown-item"
+              >1.liga 1997/98</a
+            >
+            <a href="zapasy.asp?sezona=1997prip" class="dropdown-item"
+              >Příprava 1997/98</a
+            >
+            <a href="zapasy.asp?sezona=1997" class="dropdown-item"
+              >2.liga 1996/97</a
+            >
+            <a href="zapasy.asp?sezona=1996prip" class="dropdown-item"
+              >Příprava 1996/97</a
+            >
+            <a href="zapasy.asp?sezona=1996" class="dropdown-item"
+              >2.liga 1995/96</a
+            >
+            <a href="zapasy.asp?sezona=1995" class="dropdown-item"
+              >2.liga 1994/95</a
+            >
+          </div>
+        </div>
+
+        <br />
+        <div class="box box-articles">
+          <h2 class="heading">Aktuálně na webu</h2>
+          <div class="articles-inner">
+            <a
+              href="clanek.asp?id=Upozorneni-pro-fanousky-V-Moravskych-Budejovicich-na-hokej-staro-novym-vchodem--8274"
+              class="article"
+            >
+              <div class="article-photo">
+                <img
+                  src="https://php.esports.cz/images/min_https.php?cover&amp;topcut&amp;exact&amp;w=420&amp;h=230&amp;mtime=1723849518&amp;file=http://www.hstrebic.cz//files/articles_photo/8274_logohst.jpg"
+                />
+                <div class="article-cat">Aktuální zprávy</div>
+              </div>
+              <div class="article-heading">
+                Upozornění pro fanoušky: V Moravských Budějovicích na hokej
+                (staro)novým vchodem
+              </div>
+              <div class="article-date">před 3 dny</div>
+            </a>
+
+            <a
+              href="clanek.asp?id=Po-uspesne-premiere-vyrazi-bile-hvezdy-smer-Tabor--8272"
+              class="article"
+            >
+              <div class="article-heading">
+                Po úspěšné premiéře vyráží bílé hvězdy směr Tábor!
+              </div>
+              <div class="article-date">14.08.2024</div>
+            </a>
+
+            <a
+              href="zapas.asp?id=Premiera-vysla-vitezne-divaci-videli-devet-branek-9557"
+              class="article"
+            >
+              <div class="article-heading">
+                Premiéra vyšla vítězně, diváci viděli devět branek
+              </div>
+              <div class="article-date">13.08.2024</div>
+            </a>
+
+            <a
+              href="clanek.asp?id=Pripravne-zapasy-za-dvermi-Horacka-Slavia-v-utery-vyzve-druholigove-Velke-Mezirici--8270"
+              class="article"
+            >
+              <div class="article-heading">
+                Přípravné zápasy za dveřmi! Horácká Slavia v úterý vyzve
+                druholigové Velké Meziříčí!
+              </div>
+              <div class="article-date">12.08.2024</div>
+            </a>
+
+            <a
+              href="clanek.asp?id=Druhy-tyden-na-lede-Slapeme-do-toho-jedem-kondici-rika-Jakub-Stehlik-8269"
+              class="article"
+            >
+              <div class="article-heading">
+                Druhý týden na ledě. Šlapeme do toho, jedem kondici, říká Jakub
+                Stehlík
+              </div>
+              <div class="article-date">06.08.2024</div>
+            </a>
+
+            <a
+              href="clanek.asp?id=Prvni-treninky-na-lede-byly-na-zapracovani-rika-Dolnicek-Kdo-dorazil-na-zkousku--8268"
+              class="article"
+            >
+              <div class="article-heading">
+                První tréninky na ledě byly na zapracování, říká Dolníček. Kdo
+                dorazil na zkoušku?
+              </div>
+              <div class="article-date">02.08.2024</div>
+            </a>
+
+            <a
+              href="clanek.asp?id=Dovolena-konci-kdy-a-kde-vyjede-HST-na-led--8266"
+              class="article"
+            >
+              <div class="article-heading">
+                Dovolená končí, kdy a kde vyjede HST na led?
+              </div>
+              <div class="article-date">25.07.2024</div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </aside>
+  </div>
+</div>
+
+{% endblock %}
