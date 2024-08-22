@@ -7229,11 +7229,11 @@ header {
 .hpTopBan {
   display: block;
   width: 100%;
-
+  aspect-ratio: 652/320;
   img {
     width: 100%;
-    object-fit: contain;
-    max-height: calc(100vh - 200px);
+    height: 100%;
+    object-fit: cover;
   }
 }
 
