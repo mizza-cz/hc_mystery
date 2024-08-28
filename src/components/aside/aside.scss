@@ -101,7 +101,7 @@ aside .box-articles .articles-inner .article-cat {
   font-size: 15px;
   font-weight: bold;
   color: #ffffff;
-  background-color: #e2002e;
+  background-color: var(--dark-blue);
   display: inline-block;
   padding: 6px 17px;
   text-transform: uppercase;
@@ -143,7 +143,7 @@ aside .box-submenu .dropdown-item.active,
 aside .box-submenu .dropdown-item:active,
 aside .box-submenu .dropdown-item:focus,
 aside .box-submenu .dropdown-item:hover {
-  border-bottom: 1px solid #e2002e;
+  border-bottom: 1px solid var(--light-blue);
   background: transparent;
   color: #313131;
 }

@@ -4892,7 +4892,7 @@ select {
   border: solid 1px #eeeeee;
   padding: 10px 65px 10px 15px;
   vertical-align: middle;
-  background: url("/img/arrow-select.svg") #fff center right no-repeat;
+  background: url("../images/ico/arrow-select.svg") #fff center right no-repeat;
   max-width: 100%;
   width: 100%;
   font-family: Rajdhani;
@@ -4905,7 +4905,8 @@ select {
 select:active,
 select:focus,
 select:hover {
-  background: url("/img/arrow-select-hover.svg") #fff center right no-repeat;
+  background: url("../images/ico/arrow-select-hover.svg") #fff center right
+    no-repeat;
   outline: 0;
 }
 
@@ -6249,7 +6250,7 @@ h2.heading .more {
   font-weight: bold;
   color: #ffffff;
   height: 40px;
-  background-color: #e2002e;
+  background-color: var(--dark-blue);
   display: inline-block;
   padding: 9px 17px;
   text-transform: uppercase;
@@ -6394,6 +6395,7 @@ main .main-text .report-box .game-row .game-data .team:first-child {
 }
 main .main-text .report-box .game-row .game-data .team img {
   width: 70px;
+  display: inline-block !important;
 }
 @media (max-width: 1220px) {
   main .main-text .report-box .game-row .game-data .team img {
@@ -6774,12 +6776,12 @@ table.nice.table.schedule td.buttons .button {
   padding: 4px 11px;
   margin-right: 4px;
   background: #ffffff;
-  border: 1px solid #e2002e;
-  color: #e2002e;
+  border: 1px solid var(--dark-blue);
+  color: var(--dark-blue);
   font-weight: 500;
 }
 table.nice.table.schedule td.buttons .button:hover {
-  background: #e2002e;
+  background: var(--dark-blue);
   color: #fff;
   text-decoration: none;
 }
@@ -6841,7 +6843,7 @@ form#form_filter .submit {
   font-size: 15px;
   font-weight: bold;
   color: #ffffff;
-  background-color: #e2002e;
+  background-color: var(--dark-blue);
   display: inline-block;
   padding: 6px 17px;
   text-transform: uppercase;
@@ -6849,7 +6851,7 @@ form#form_filter .submit {
 form#form_filter .submit:active,
 form#form_filter .submit:focus,
 form#form_filter .submit:hover {
-  background-color: #cd002a;
+  background-color: var(--dark-blue);
   text-decoration: none;
 }
 
@@ -6890,7 +6892,7 @@ form#form_filter .submit:hover {
 .news-list.articles-list strong {
   display: block;
   text-transform: uppercase;
-  color: #e2002e;
+  color: var(--light-blue);
   font-size: 14px;
 }
 
@@ -6944,7 +6946,7 @@ form#form_filter .submit:hover {
 }
 .strankovani a.strankovaniVyrazne {
   text-decoration: none;
-  color: #e2002e;
+  color: var(--light-blue);
 }
 .strankovani a.strankovaniSipky {
   border-color: transparent;
